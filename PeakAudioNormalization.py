@@ -1,11 +1,3 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*- 
-"""
-Created on Fri Nov 2 11:01:34 2018
-"""
-
-# /----------------------------[General Info]---------------------------------\
-# General description here.
 
 import numpy as np
 import soundfile as sf
@@ -75,7 +67,6 @@ PkDb=-1.5  # Peak Normalisation Value. Use only values ≤0, unless you want cli
 ChannelCount=0
 x=0
 
-
 #--------------------------------
 
 [AudioIn,fs]=sf.read(filename)
@@ -96,7 +87,3 @@ elif ChannelCount==2:
 
 elif ChannelCount>2:
     print('Only mono and stereo files supported')
-
-# references
-# https://www.w3schools.com/python/numpy/numpy_array_join.asp
-# https://stackoverflow.com/questions/28590669/tkinter-tkfiledialog-doesnt-exist
